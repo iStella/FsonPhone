@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">可视化总检放行检查系统</string> <!--  可视化总检放行检查系统 -->
+
+    <string name="jsonarray">
+        "[
+        {'num':'1','title':'组装浮动环密封组件AA211-0','content':[
+        {'ishead':'1','num':'1','title':'第一步，测量与计算。','step':'1.1.测量浮动环内径。','operate':'取出零件AA211-10浮动环，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'2','title':'','step':'','operate':'测量零件内径，拍下测量值。参考值为φ70.10。','imports':'注意与密封轴套AA21-018外径配合记录。'},
+        {'ishead':'0','num':'3','title':'','step':'1.2.测量石墨环厚度（代号m）。','operate':'取出零件AA22-063a石墨环，拍下零件。','imports':''},
+        {'ishead':'0','num':'4','title':'','step':'','operate':'测量零件厚度，拍摄测量值（参考值为3.7）。','imports':''},
+        {'ishead':'1','num':'5','title':'第二步，装配流程及过程中的注意事项。','step':'2.1.排查浮动环密封壳体Ⅰ螺纹孔底无咬死现象。','operate':'取出零件AA211-01浮动环密封壳体Ⅰ，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'6','title':'','step':'','operate':'试装每个螺纹孔并拧到底，确保无咬死现象后，拍摄现场。','imports':''},
+        {'ishead':'0','num':'7','title':'','step':'2.2.组装浮动环、波形弹簧、石墨环。','operate':'分别取出零件AA211-10浮动环、AA211-04波形弹片、AA211-063a石墨环各1件，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'8','title':'','step':'','operate':'在AA211-01浮动环密封壳体Ⅰ上依次组装零件后，拍摄现场。','imports':'注意AA211-10浮动环凸耳在上。'},
+        {'ishead':'0','num':'9','title':'','step':'2.3.组装浮动环密封壳体Ⅱ。','operate':'取出零件AA211-02浮动环密封壳体Ⅱ，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'10','title':'','step':'','operate':'完成组装后，拍摄现场。','imports':''},
+        {'ishead':'0','num':'11','title':'','step':'2.4.组装波形弹簧。','operate':'取出零件AA211-04波形弹簧1件，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'12','title':'','step':'','operate':'完成组装后，拍摄现场。','imports':'注意位置对中。'},
+        {'ishead':'0','num':'13','title':'','step':'2.5.组装石墨环。','operate':'取出零件AA211-063a石墨环，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'14','title':'','step':'','operate':'完成组装后，拍摄现场。','imports':''},
+        {'ishead':'0','num':'15','title':'','step':'2.6.组装浮动环、密封壳体Ⅲ。','operate':'分别取出零件AA211-20浮动环、AA211-03密封壳体Ⅲ，拍下零件型号。','imports':''},
+        {'ishead':'0','num':'16','title':'','step':'','operate':'将AA211-20浮动环放入AA211-03密封壳体Ⅲ中后，拍摄现场。','imports':'注意石墨环密封凸台朝向壳体研磨面，组装过程中不要碰伤石墨环密封面。'},
+        {'ishead':'0','num':'17','title':'','step':'2.7.组装螺栓、鞍形弹性垫圈。','operate':'分别取出零件M8*26螺栓16件、AA22-059鞍形弹性垫圈16件，工装：力矩扳手，转接件，拍下零件。','imports':''},
+        {'ishead':'0','num':'18','title':'','step':'','operate':'将螺栓、鞍形弹性垫圈分多次对称拧紧后，拍摄现场。','imports':'注意组装完成后，可以用手推动浮动环上下活动，应无卡死现象。'}
+        ]},
+        {'num':'2','title':'组装浮动环密封组件AA211-1','content':[]},
+        {'num':'3','title':'组装浮动环密封组件AA211-2','content':[]},
+        {'num':'4','title':'组装浮动环密封组件AA211-3','content':[]}
+        ]"
+    </string>
+    <!--
+    <string name="jsonarray2">
+        "[
+        {'num':'1','title':'粘贴加热片检验','content':[
+        {'ishead':'1','num':'1','title':'第一步，准备。','step':'1.1.环境确认。','operate':'环境温度为20℃±5℃；环境湿度为30%-60%；环境洁净度犹豫100000级；一般照度不低于300Lx。','imports':''},
+        {'ishead':'0','num':'2','title':'','step':'1.2.工具量准备','operate':'取出数字万用表1台：测量精度应优于0.05%，电阻值的测量分辨率为0.01Ω。','imports':'注意拍摄万用表编号记录。'},
+        {'ishead':'0','num':'3','title':'','step':'','operate':'取出数字兆欧表：量程大于200MΩ，电压250V。','imports':'注意拍摄兆欧表编号。'},
+        {'ishead':'0','num':'4','title':'','step':'','operate':'取出温湿度计：精度优于0.1℃。','imports':''},
+        {'ishead':'0','num':'5','title':'','step':'','operate':'取出钢板尺：200mm。','imports':''},
+        {'ishead':'0','num':'6','title':'','step':'','operate':'取出卷尺：5m。','imports':''},
+        {'ishead':'0','num':'7','title':'','step':'','operate':'取出放大镜：5X。','imports':''},
+        {'ishead':'0','num':'8','title':'','step':'1.3.图纸文件准备','operate':'准备加热片粘贴相关图纸文件。','imports':''},
+
+        {'ishead':'1','num':'9','title':'第二步，加压固化时间检查。','step':'2.1.记录加热片加压固化时间。','operate':'以加热片加压时间为固化起始时间，以加热片试压时间为结束时间。','imports':'注意使止时间。'},
+        {'ishead':'0','num':'10','title':'','step':'','operate':'加压固化时间应满足图表1所示要求。','imports':'注意观察温湿度。'},
+
+        {'ishead':'1','num':'11','title':'第三步，加热片标识检查。','step':'3.1.加热片标识检查。','operate':'目视检查加热片标识类型应满足图纸文件要求。','imports':''},
+
+        {'ishead':'1','num':'12','title':'第四步，固化后粘贴位置检查。','step':'4.1.引线出线位置检查。','operate':'目视检查加热片引线出线方向符合图纸文件要求。','imports':'注意符合性。'},
+        {'ishead':'0','num':'13','title':'','step':'4.2.加热片粘贴位置及尺寸位置。','operate':'使用卷尺测量加热片粘贴位置尺寸应符合图纸文件位置要求。','imports':'注意符合性。'},
+
+        {'ishead':'1','num':'14','title':'第五步，固化后加热片外观检查。','step':'5.1.加热片外观检查。','operate':'目视检查加热片应平整无褶皱、无压痕、层间不脱落。','imports':'注意使止时间。'},
+        {'ishead':'0','num':'6','title':'','step':'','operate':'目视检查加热片的加热丝条宽度、间距均匀，边缘平齐清晰，无断丝。','imports':''},
+        {'ishead':'0','num':'6','title':'','step':'','operate':'目视检查聚酰亚胺薄膜绝缘层无破损。','imports':''},
+        {'ishead':'0','num':'6','title':'','step':'','operate':'目视检查焊点扁平光滑、无毛刺、无虚焊。','imports':''},
+
+        {'ishead':'1','num':'5','title':'第六步，。','step':'6.1.。','operate':'。','imports':''},
+        {'ishead':'0','num':'6','title':'','step':'','operate':'。','imports':''}
+
+        ]},
+        {'num':'2','title':'组装浮动环密封组件AA211-1','content':[]},
+        {'num':'3','title':'组装浮动环密封组件AA211-2','content':[]},
+        {'num':'4','title':'组装浮动环密封组件AA211-3','content':[]}
+        ]"
+    </string>
+    -->
+</resources>

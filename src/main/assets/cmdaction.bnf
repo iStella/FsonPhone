@@ -1,0 +1,15 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar cmdaction    ;
+!slot <cmdtakepic>;
+!slot <cmdrecordvideo>;
+!slot <cmdexit>;
+
+!start <mainaction>;
+<mainaction>:
+<cmdtakepic>
+|<cmdrecordvideo>
+|<cmdexit>;
+
+<cmdtakepic>:拍照;
+<cmdrecordvideo>:录像;
+<cmdexit>:退出;

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:background="@color/lightgray">
+
+            <ImageView
+                android:id="@+id/main_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:background="@color/lightgray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/lightgray"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/img_black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/backblack"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+            <!-- android:layout_marginRight="10dp" -->
+            <ImageView
+                android:id="@+id/img_navy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/backnavy"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linne3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical|center">
+
+            <TextView
+                android:id="@+id/small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:textSize="23dp"
+                android:textColor="@color/black"
+                android:text="缩小"/>
+
+            <TextView
+                android:id="@+id/zoom1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border_zoom_navy"/>
+
+            <TextView
+                android:id="@+id/zoom2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border_zoom_null"/>
+
+            <TextView
+                android:id="@+id/zoom3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border_zoom_null"/>
+
+            <TextView
+                android:id="@+id/zoom4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border_zoom_null"/>
+
+            <TextView
+                android:id="@+id/zoom5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/border_zoom_null"/>
+
+            <TextView
+                android:id="@+id/big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:textSize="23dp"
+                android:textColor="@color/black"
+                android:text="放大"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical|center">
+
+            <TextView
+                android:id="@+id/tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textSize="33dp"
+                android:textColor="@color/DimGray"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/line_delete"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:background="@color/whitesmoke"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/prompt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:text="确定要删除吗？"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightgray"
+                    android:alpha="150"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:text="提示"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:background="@color/whitesmoke"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="确定"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:background="@color/whitesmoke"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="取消"/>
+                </LinearLayout>
+            </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/wakeup"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textSize="23dp"
+            android:clickable="true"
+            android:text="唤起语音" />
+
+        <ImageView
+            android:id="@+id/point_icon1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/point_icon1"/>
+
+        <ImageView
+            android:id="@+id/point_icon2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/point_icon1"/>
+
+        <ImageView
+            android:id="@+id/point_icon3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/point_icon1"/>
+    </LinearLayout>
+</RelativeLayout>
